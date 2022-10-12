@@ -3,7 +3,7 @@ export const Profile = ({ username, tag, location, avatar, stats: { followers, v
         <div class="profile">
   <div class="description">
     <img
-      src="https://cdn-icons-png.flaticon.com/512/1077/1077012.png"
+      src={avatar}
       alt="User avatar"
       class="avatar"
     />
@@ -15,15 +15,15 @@ export const Profile = ({ username, tag, location, avatar, stats: { followers, v
   <ul class="stats">
     <li>
       <span class="label">Followers</span>
-      <span class="quantity">1000</span>
+      <span class="quantity">{followers}</span>
     </li>
     <li>
       <span class="label">Views</span>
-      <span class="quantity">2000</span>
+                    <span class="quantity">{views}</span>
     </li>
     <li>
       <span class="label">Likes</span>
-      <span class="quantity">3000</span>
+                    <span class="quantity">{likes}</span>
     </li>
   </ul>
 </div>
