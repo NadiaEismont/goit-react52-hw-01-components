@@ -1,8 +1,8 @@
 import PropTypes from 'prop-types';
-import {Profile, Description, Avatar, Name, Tag, Location, Stats, Item, Label, Quantity} from './Profile.styled';
+import {ProfileDiv, Description, Avatar, Name, Tag, Location, Stats, Item, Label, Quantity} from './Profile.styled';
 export const Profile = ({ username, tag, location, avatar, stats: { followers, views, likes } }) => {
   return (
-    <Profile>
+    <ProfileDiv>
       <Description>
         <Avatar
           src={avatar}
@@ -27,7 +27,7 @@ export const Profile = ({ username, tag, location, avatar, stats: { followers, v
           <Quantity>{likes}</Quantity>
         </Item >
       </Stats>
-    </Profile>
+    </ProfileDiv>
   );
 }
 

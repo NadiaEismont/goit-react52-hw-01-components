@@ -1,14 +1,14 @@
 import PropTypes from 'prop-types';
 import {ChangeColor, Item, Name} from './FriendListItem.styled';
 export const FriendListItem = ({ avatar, name, isOnline, id }) => {
-    return (
-        <Item key={id}>
+  return (
+    <Item key={id}>
       <ChangeColor isOnline={isOnline}></ChangeColor>
-  <span class="status"></span>
-  <img class="avatar" src={avatar} alt="User avatar" width="48" />
-        < Name> {name} </Name>
-</Item>
-    )
+      <span className="status"></span>
+      <img className="avatar" src={avatar} alt="User avatar" width="48" />
+      <Name> {name} </Name>
+    </Item>
+  );
 }
 
 

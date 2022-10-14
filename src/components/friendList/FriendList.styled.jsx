@@ -8,4 +8,5 @@ export const FriendListUl = styled.ul`
   border-top: 1px solid #dddddd;
    list-style: none;
   margin: 0;
+  padding: 0; 
 `

@@ -11,7 +11,8 @@ export const Tatistics = styled.section`
   border-radius: 5px;
   box-shadow: 3px 3px 6px 0px rgb(0 0 0 / 75%);
 ` 
-export const StatList= styled.ul `
+export const StatList = styled.ul `
+ padding: 0; 
   display: flex;
   align-items: center;
   justify-content: center;
