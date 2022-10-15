@@ -6,7 +6,7 @@ export const FriendListUl = styled.ul`
   justify-content: center;
   width: 100%;
   border-top: 1px solid #dddddd;
-   list-style: none;
+  list-style: none;
   margin: 0;
-  padding: 0; 
-`
+  padding: 0;
+`;

@@ -9,4 +9,4 @@ export const SectionFormate = styled.section`
   border: 1px solid #e9eef3;
   border-radius: 5px;
   box-shadow: 3px 3px 6px 0px rgb(0 0 0 / 75%);
-`
+`;

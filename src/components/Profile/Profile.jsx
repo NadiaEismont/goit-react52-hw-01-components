@@ -1,35 +1,49 @@
 import PropTypes from 'prop-types';
-import {ProfileDiv, Description, Avatar, Name, Tag, Location, Stats, Item, Label, Quantity} from './Profile.styled';
-export const Profile = ({ username, tag, location, avatar, stats: { followers, views, likes } }) => {
+import {
+  Avatar,
+  Description,
+  Item,
+  Label,
+  Location,
+  Name,
+  ProfileDiv,
+  Quantity,
+  Stats,
+  Tag,
+} from './Profile.styled';
+export const Profile = ({
+  username,
+  tag,
+  location,
+  avatar,
+  stats: { followers, views, likes },
+}) => {
   return (
     <ProfileDiv>
       <Description>
-        <Avatar
-          src={avatar}
-          alt="User avatar"
-                />
+        <Avatar src={avatar} alt="User avatar" />
         <Name>{username}</Name>
         <Tag>@{tag}</Tag>
         <Location>{location}</Location>
       </Description>
 
       <Stats>
-        <Item >
+        <Item>
           <Label>Followers</Label>
           <Quantity>{followers}</Quantity>
-        </Item >
-        <Item >
+        </Item>
+        <Item>
           <Label>Views</Label>
           <Quantity>{views}</Quantity>
-        </Item >
-        <Item >
+        </Item>
+        <Item>
           <Label>Likes</Label>
           <Quantity>{likes}</Quantity>
-        </Item >
+        </Item>
       </Stats>
     </ProfileDiv>
   );
-}
+};
 
 Profile.prototype = {
   username: PropTypes.string.isRequired,
